@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Acme&family=Baloo+Bhaijaan+2:wght@500&family=Lato&family=Montserrat:wght@500&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&family=Lato&family=Montserrat:wght@500&display=swap"
+        rel="stylesheet">
+
+    <title>COMPUSPACE</title>
+</head>
+
+
+<body>
+    <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">COMPUSPACE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+                        id="txtSearch">
+                    <input class="btn-search" id="btnSearch" type="button" value="Buscar">>
+
+
+                    <button id="btnCarrito" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                        aria-controls="offcanvasRight" class="px-0">
+                        <svg style="fill: #8ED63B;" xmlns="http://www.w3.org/2000/svg" width="54" height="48"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M10 19.5c0 .829-.672 1.5-1.5 1.5s-1.5-.671-1.5-1.5c0-.828.672-1.5 1.5-1.5s1.5.672 1.5 1.5zm3.5-1.5c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm1.336-5l1.977-7h-16.813l2.938 7h11.898zm4.969-10l-3.432 12h-12.597l.839 2h13.239l3.474-12h1.929l.743-2h-4.195z" />
+                        </svg>
+                    </button>
+                    <span id="cart_menu_num" data-action="cart-can" class="badge rounded-circle"></span>
+                    <div class="user pt-3 text-light" id="tituloDiv">
+
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container rounded" id="container">
+            <div class="row rounded">
+                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 " id="col1">
+                    <br>
+
+                    <h4>
+                        Ordenar
+                    </h4>
+
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"
+                            checked value="menor">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Menor a mayor precio
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                            value="mayorr">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Mayor a menor precio
+                        </label>
+                    </div>
+                    <input type="button" id="btnOrdenar" class="btn  shadow my-3" value="Aplicar"
+                        style="background-color: #8ED63B;"> <br>
+
+                    <h4>
+                        Rango de Precios
+                    </h4>
+                    <h7>Menor Precio</h7>
+                    <input type="range" class="form-range" id="rangeMenor" min="1000" max="10000">
+                    <p id="menorText"></p>
+                    <h7>Mayor Precio</h7>
+                    <input type="range" class="form-range" id="rangeMayor" min="1000" max="10000">
+                    <p id="mayorText"></p>
+
+                    <input type="button" id="btnRangos" class="btn  shadow" value="Aplicar"
+                        style="background-color: #8ED63B;">
+
+
+
+                </div>
+
+
+                <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10" id="col2">
+                    <h2 class="mx-5 mb-5">Productos destacados </h2>
+                    <div class=" row d-flex justify-content-evenly p-3" id="row">
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="row" id="row2">
+
+            </div>
+
+
+
+        </div>
+
+    </main>
+    <script src="script.js"></script>
+    <script src="agregarProd.js"></script>
+    <script src="carrito.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

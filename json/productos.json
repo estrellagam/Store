@@ -1,0 +1,33 @@
+[{
+        "id": 1,
+        "nombre": "Laptop Lenovo IdeaPad 5i",
+        "precio": 4000,
+        "marca": "Lenovo",
+        "imagen": "lenovo_idepad.jpg"
+    }, {
+        "id": 2,
+        "nombre": "Laptop Miray LPM-BW15-i3",
+        "precio": 5000,
+        "marca": "Miray",
+        "imagen": "miray.jpg"
+    }, {
+        "id": 3,
+        "nombre": "Laptop Dell Inspiron 3515 D6DM6",
+        "precio": 6000,
+        "marca": "Dell",
+        "imagen": "dell.jpg"
+    }, {
+        "id": 4,
+        "nombre": "Macbook Air 13",
+        "precio": 5200,
+        "marca": "Apple",
+        "imagen": "macbook.jpg"
+    }, {
+        "id": 5,
+        "nombre": "Laptop Asus X571GT-HN1020T",
+        "precio": 3340,
+        "marca": "Asus",
+        "imagen": "asus_x4.jpg"
+    }
+
+]
